@@ -9,13 +9,7 @@ public class Conta {
         this.agencia = agencia;
         this.nome = nome;
         this.saldo = saldo;
-        System.out.println("Olá "+this.nome+", obrigado "+
-        "por criar uma conta em nosso banco, sua agência é "+ this.agencia+
-        ",conta é "+this.numero+" e seu saldo de R$" +this.saldo+" já está disponível para saque");
     }
-
-
-
     public String getAgencia() {
         return agencia;
     }
