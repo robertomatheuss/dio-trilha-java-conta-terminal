@@ -1,18 +1,28 @@
-## Getting Started
+# Sistema de Conta Bancária
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+Este é um simples sistema em Java para criar uma conta bancária e exibir algumas informações básicas sobre ela. Essa projeto é uma atividade da plataforma DIO
 
-## Folder Structure
+##  ContaTerminal.java
 
-The workspace contains two folders by default, where:
+Este arquivo contém o programa principal que solicita ao usuário informações sobre a conta bancária, como nome, agência, número e saldo. Ele então cria uma instância da classe `Conta` com essas informações.
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+## Arquivo 2: Conta.java
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+Este arquivo define a classe `Conta`, que representa uma conta bancária. Ele possui quatro atributos: `numero`, `agencia`, `nome` e `saldo`. Além disso, inclui um construtor que inicializa esses atributos com os valores fornecidos e exibe uma mensagem de boas-vindas ao criar uma nova conta. Também inclui métodos para acessar esses atributos.
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
+### Métodos da classe `Conta`:
 
-## Dependency Management
+- `getAgencia()`: Retorna a agência da conta.
+- `getNome()`: Retorna o nome associado à conta.
+- `getNumero()`: Retorna o número da conta.
+- `getSaldo()`: Retorna o saldo atual da conta.
 
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+## Como usar
+
+1. Compile ambos os arquivos Java.
+2. Execute o programa principal, `ContaTerminal`, que solicitará as informações necessárias para criar uma nova conta bancária.
+3. O programa exibirá uma mensagem de boas-vindas com os detalhes da conta recém-criada.
+
+### Requisitos
+
+- Java Development Kit (JDK) instalado no seu sistema.
